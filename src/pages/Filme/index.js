@@ -16,8 +16,9 @@ function Filme(){
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    
     async function loadFilme() {
-      await api.get(`/movie/${id}`, {
+      await api.get(`https://api.themoviedb.org/3/movie/550?api_key=d4731f525a4f66b129a5e4c237aa579c}/movie/${id}`, {
         params: {
           api_key: "d4731f525a4f66b129a5e4c237aa579c",
           language: "pt-BR",
